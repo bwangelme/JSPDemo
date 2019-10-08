@@ -14,7 +14,7 @@ public class PrimePrinter extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         PrimeCalculator cal = new PrimeCalculator();
 
-        ArrayList<ArrayList<Integer>> result = cal.GetPrimeNumber(20, 10);
+        ArrayList<ArrayList<Integer>> result = cal.GetPrimeNumber(100, 10);
 
         request.setAttribute("primeNumbers", result);
 
