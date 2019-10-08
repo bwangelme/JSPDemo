@@ -20,4 +20,14 @@
         <servlet-name>Ch3 Beer</servlet-name>
         <url-pattern>/SelectBeer.do</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Print Prime Number</servlet-name>
+        <servlet-class>com.example.web.PrimePrinter</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Print Prime Number</servlet-name>
+        <url-pattern>/Prime</url-pattern>
+    </servlet-mapping>
 </web-app>
