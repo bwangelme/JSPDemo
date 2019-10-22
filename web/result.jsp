@@ -12,13 +12,18 @@
     <title>啤酒推荐</title>
 </head>
 <body>
-    <h1 align="center">啤酒推荐</h1>
-    <%
-        List styles = (List)request.getAttribute("styles");
+<h1 align="center">啤酒推荐</h1>
+<%
+    List styles = (List) request.getAttribute("styles");
+    if (styles != null) {
         Iterator it = styles.iterator();
-        while(it.hasNext()) {
+        while (it.hasNext()) {
             out.print("<br>try: " + it.next());
         }
-    %>
+    }
+
+    String pageName = page.toString();
+    out.print(pageName);
+%>
 </body>
 </html>

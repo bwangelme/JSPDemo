@@ -15,4 +15,7 @@ public class Ch1Servlet extends HttpServlet{
                 "</html>"
         );
     }
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+    }
 }
